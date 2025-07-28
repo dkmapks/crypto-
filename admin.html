@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head><meta charset="UTF‑8"><title>Admin Panel</title></head>
+<body>
+  <h1>Panel Admina</h1>
+  <div id="login">
+    <p>Wprowadź kod admina:</p>
+    <input id="admin-code" type="password">
+    <button id="login-btn">Zaloguj</button>
+    <p id="login-msg"></p>
+  </div>
+
+  <div id="control" style="display:none;">
+    <h2>Kursy</h2>
+    <label>DCoin: <input id="kurs-dcoin" type="number" step="0.01"></label><br>
+    <label>Branzo: <input id="kurs-branzo" type="number" step="0.001"></label><br>
+    <label>BBCoin: <input id="kurs-bbcoin" type="number" step="0.001"></label><br>
+    <button id="save-kurs">Zapisz kursy</button>
+    <button id="rand-kurs">Losowy kurs</button>
+
+    <h2>Generuj kod bonusowy</h2>
+    <input id="new-code" placeholder="Nazwa kodu">
+    <select id="new-coin">
+      <option value="dcoin">DCoin</option>
+      <option value="branzo">Branzo</option>
+      <option value="bbcoin">BBCoin</option>
+    </select>
+    <input id="new-amount" type="number" placeholder="Ilość">
+    <button id="add-code">Dodaj kod</button>
+    <p id="code-msg"></p>
+  </div>
+
+<script src="admin.js"></script>
+</body>
+</html>
