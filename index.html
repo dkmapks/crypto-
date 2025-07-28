@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Wallet Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Symulator Portfela Crypto</h1>
+  <div id="portfolio">
+    <p>Saldo PLN: <span id="saldo-pln">0</span> zł</p>
+    <p>DCoin: <span id="saldo-dcoin">0</span> (wartość: <span id="val-dcoin">0</span> zł)</p>
+    <p>Branzo: <span id="saldo-branzo">0</span> (wartość: <span id="val-branzo">0</span> zł)</p>
+    <p>BBCoin: <span id="saldo-bbcoin">0</span> (wartość: <span id="val-bbcoin">0</span> zł)</p>
+    <p>Razem: <span id="total-value">0</span> zł</p>
+  </div>
+
+  <section>
+    <h2>Wpisz kod promocyjny</h2>
+    <input id="promo-code" type="text" placeholder="Kod">
+    <button id="apply-code">Zastosuj</button>
+    <p id="promo-msg"></p>
+  </section>
+
+  <section>
+    <h2>Wysyłka Crypto (symulowana)</h2>
+    <select id="send-coin">
+      <option value="dcoin">DCoin</option>
+      <option value="branzo">Branzo</option>
+      <option value="bbcoin">BBCoin</option>
+    </select>
+    <input id="send-amount" type="number" placeholder="Ilość">
+    <button id="send-btn">Wyślij (dummy)</button>
+    <p id="send-msg"></p>
+  </section>
+
+  <footer><a href="admin.html">Panel admina</a></footer>
+
+<script src="wallet.js"></script>
+</body>
+</html>
